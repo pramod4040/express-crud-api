@@ -6,10 +6,10 @@ const path = require('path');
 
 const app = express();
 
-
+// const port = 3000;
 app.use(express.json()); 
 
-const port = 3000;
+
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname+'/homepage.html'));
@@ -59,8 +59,8 @@ app.post('/person/edit/:id', (req, res) => {
 
 
 
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
-})
+// app.listen(port, () => {
+//     console.log(`Example app listening at http://localhost:${port}`)
+// })
 
 

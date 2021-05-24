@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD API</title>
+</head>
+
+<style>
+    .each-block{
+        margin: 15px;
+        padding: 15px;
+        background-color: antiquewhite;
+        border: 1px solid grey;
+    }
+
+    .make-center{
+        text-align: center;
+    }
+
+    .stick-to-footer{
+        background-color:indianred;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
+
+
+</style>
+<body>
+    <div class="wrapper">
+
+    <h1>This is simple crud api create in express js.</h1>
+
+    <div>
+
+            <h3>EndPoints</h3>
+
+            <div class="each-block">
+                <p>URL: /person</p>
+                <p>Method: GET</p>
+                <p>Description: Gives lists of person</p>
+            </div>
+
+            <div class="each-block">
+                <p>URL: /person/add</p>
+                <p>Method: POST</p>
+                <p>Data: {"name": "Name Of person", "address": "Address of person"}</p>
+                <p>Description: >Add person, input data need to be in json format</p>
+            </div>
+
+            <div class="each-block">
+                <p>URL: /person/edit/:id</p>
+                <p>Method: POST</p>
+                <p>Data: {"name": "Edited Name Of person", "address": "Edited Address of person"}</p>
+                <p>Description: >Edit the person, input data need to be in json format</p>
+            </div>
+
+            <div class="each-block">
+                <p>URL: /person/delete/:id</p>
+                <p>Method: GET</p>
+                <p>Description: Deletes the user pass id in url</p>
+            </div>
+    </div>
+<div>
+    <footer class="stick-to-footer">
+         <p class="make-center">Designed and developed by: Pramod Khatiwada</p>
+    </footer>
+</body>
+</html>
